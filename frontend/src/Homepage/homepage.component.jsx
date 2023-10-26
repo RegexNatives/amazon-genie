@@ -10,15 +10,15 @@ const Homepage = () => {
   return (
     <>
       <ChatBot
-        tryName="Try Amazon's New Search Assistant"
-        name="Amazon's Search Assistant"
+        tryName="Try Amazon Genie"
+        name="Amazon Genie"
         apiUrl={"/api/query/"}
         initialMessages={[
-          { role: "assistant", message: "Hi! I'm Amazon's new interactive chat bot." },
-          { role: "assistant", message: "How can I help you today?" },
+          { role: "assistant", message: "Hi! I'm Amazon Genie" },
+          { role: "assistant", message: "How can I assist you today?" },
         ]}
       />
-      <h1 className="homepage-title">Amazon For Customers</h1>
+      <h1 className="homepage-title">Products</h1>
       <ShopProducts />
     </>
   );

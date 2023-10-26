@@ -301,7 +301,7 @@ export default function ChatBot({ tryName, name, apiUrl, initialMessages }) {
             <div>
               <div className="wrapper">
                 <div className="wrapper1">
-                  <img src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png" />
+                  {/* <img src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png" /> */}
                   <h2>{name}</h2>
                 </div>
                 <SettingsIcon
@@ -342,7 +342,7 @@ export default function ChatBot({ tryName, name, apiUrl, initialMessages }) {
                     setAllChats([...initialMessages]);
                   }}
                 >
-                  Clear Conversation
+                  Clear
                 </div>
               </div>
             </div>

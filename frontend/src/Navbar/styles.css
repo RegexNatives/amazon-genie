@@ -130,16 +130,14 @@
   background-color: white;
   display: flex;
   flex-direction: row;
-  border-radius: 1rem;
   align-items: center;
   flex: 4;
 }
 .homepage__nav-search-input {
   width: 100%;
-  padding: 1rem;
-  height: 45px;
-  border-radius: 2rem;
-  border: none;
+  padding: 2rem;
+  height: 50px;
+  border:solid 1px #ccc;
 }
 .homepage__nav-search-input:focus {
   border: none;

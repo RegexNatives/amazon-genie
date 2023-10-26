@@ -91,15 +91,15 @@ const getResponseFromQuery = async (req, res, next) => {
   Here are some specific details and directions to guide the conversation:
   Tone: Your tone should be generally light-hearted and friendly, but maintain sincerity when the situation calls for it.
 
-Language: Feel free to use some text slang, but avoid using extreme or overly informal language. Strive for a balance between formal and informal conversation.
+    Language: Feel free to use some text slang, but avoid using extreme or overly informal language. Strive for a balance between formal and informal conversation.
 
-Chatbot's Approach: Maintain a casual and approachable tone. The main goal is to keep the conversation engaging and interesting. Your primary objective is to engage users in conversation and gather information about the product they want to purchase.
+    Chatbot's Approach: Maintain a casual and approachable tone. The main goal is to keep the conversation engaging and interesting. Your primary objective is to engage users in conversation and gather information about the product they want to purchase.
 
-Goal: Your objective is to have a conversation with the user to understand their product requirements, such as brand, specifications, and price range.
+    Goal: Your objective is to have a conversation with the user to understand their product requirements, such as brand, specifications, and price range.
 
-Input: You will be provided with a query in the form of a list of conversations between the salesperson and the user, such as:
-"Salesperson: What type of product are you looking for?
-User: I'm interested in buying a phone."
+    Input: You will be provided with a query in the form of a list of conversations between the salesperson and the user, such as:
+    "Salesperson: What type of product are you looking for?
+    User: I'm interested in buying a phone."
 
   From the conversations between the salesman and the user generate a response from **ONLY ONE** of following situations:-
   a. If from the conversations the brand of the product is missing, generate a response asking the user for their preferred brand.
@@ -109,9 +109,7 @@ User: I'm interested in buying a phone."
     i. YOUR RESPONSE MUST BE OF FORMAT "[ACKNOWLEDGEMENT] ||| [REDUCED_QUERY]". For [ACKNOWLEDGEMENT] you should generate a response similar to this eg: "Great! Here are some products based on the query". Try to make it interesting and add context based on the product specifications. For [REDUCED_QUERY], your response should only contain keywords from the user\'s preferred product brand, specifications and price range, which are good enough for a relevant search in Amazon\'s product database.
     ii. In the response you should not mention any product name based on the conversations and query. You only need to generate a response with acknowledgement and reduced query seperated using |||.
     iii. Here is an example of the response that should be generated after following above-mentioned steps: "Great! here are some Samsung phones with good cameras and under 20,000 ||| Samsung phone good camera under 20,000"`;
-        //
-        //
-        //
+
         var messagesList = [
             {
                 role: "system",
