@@ -10,3 +10,15 @@
   align-items: center;
   gap: 0.1rem;
 }
+
+.product-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-gap: 10px;
+}
+
+.product {
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+}
